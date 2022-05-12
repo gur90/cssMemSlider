@@ -9,35 +9,33 @@
 </head>
 <body>
     <div class="wrapper">
+        <input type="radio" name="dot" id="one" checked>
+        <input type="radio" name="dot" id="two">
+        <input type="radio" name="dot" id="three">
+        <input type="radio" name="dot" id="four">
         <div class="content">
-            <div class="slide">
-                <div class="image"><img src="./assets/img/img1.jpg" alt="photo"></div>
-                <div class="text">Дратути!Вас снимает скрытая камера</div>
-                
+            <div class="slides">
+                <div class="image img-1"><img src="./assets/img/img1.jpg" alt="photo"></div>
+                <div class="image img-2" ><img src="./assets/img/img2.jpg" alt="photo"></div>
+                <div class="image img-3"><img src="./assets/img/img3.jpg" alt="photo"></div>
+                <div class="image img-4"><img src="./assets/img/img4.jpg" alt="photo"></div>
             </div>
-            <div class="slide">
-                <div class="image"><img src="./assets/img/img2.jpg" alt="photo"></div>
-                <div class="text">Царь. Просто царь.</div>
-                
-            </div>
-            <div class="slide">
-                <div class="image"><img src="./assets/img/img3.jpg" alt="photo"></div>
-                <div class="text">Когда спер котлетку и остался незамеченным</div>
-               
-            </div>
-            <div class="slide">
-                <div class="image"><img src="./assets/img/img4.jpg" alt="photo"></div>
-                <div class="text">Когда играл со спичками...</div>
-               
-            </div>
-            <div class="controlls">
-                <span class="controll-dot" onclick="currentSlide(1)"></span>
-                <span class="controll-dot" onclick="currentSlide(2)"></span>
-                <span class="controll-dot" onclick="currentSlide(3)"></span>
-                <span class="controll-dot" onclick="currentSlide(4)"></span>
+        </div>    
+        <div class="text-content">
+            <div class="some-text">
+                <div class="text text-one">Дратути!Вас снимает скрытая камера</div>
+                <div class="text text-two">Царь. Просто царь.</div>
+                <div class="text text-three">Когда спер котлетку и остался незамеченным</div>
+                <div class="text text-four">Когда играл со спичками...</div>
             </div>
         </div>
+        <div class="controlls">
+           <label for="one" class="controll-dot"><span class = "controll" id="1"></span></label> 
+           <label for="two" class="controll-dot"><span class = "controll" id="2"></span></label> 
+           <label for="three" class="controll-dot"><span  class = "controll" id="3"></span></label> 
+           <label for="four" class="controll-dot"><span class = "controll" id="4"></span></label> 
+        </div>
     </div>
-    <script src="./index.js"></script>   
+     
 </body>
 </html>
