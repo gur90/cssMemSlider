@@ -9,9 +9,10 @@ html {
 }
 body {
     background-color: black;
+  
 }
 .wrapper {
-    max-width: 800px;
+    max-width: 1100px;
     margin: 0 auto;
     display: grid;
     grid-template-areas: 
@@ -24,7 +25,7 @@ input {
     position: absolute;
 }
 .content {
-    max-width: 800px;
+    max-width: 1100px;
     margin: 20px auto;
    grid-area: content;
    overflow: hidden;
@@ -59,6 +60,7 @@ img {
 
 .text {
     color: white;
+    font-size: 25px;
     width: 25%;
     
 }
@@ -73,7 +75,6 @@ img {
     height: 35px;
     border-radius: 50%;
    display: block;
-   background-color: blue;
    cursor: pointer;
    transition: all 1s ;
    margin-right: 10px;
@@ -81,12 +82,12 @@ img {
 }
 
 .controll-dot:hover .controll{
-    border-color: blueviolet;
-    background-color: brown;
+    border-color: rgb(242, 215, 215);;
+    background-color: rgb(242, 215, 215);
 }
 .controll-dot:hover .controll:active{
-    border-color: blueviolet;
-    
+    border-color:  rgb(242, 215, 215);
+     
 }
 .controll {
     display: block;
@@ -94,19 +95,9 @@ img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: aqua;
+    background-color: rgb(228, 231, 231);
     transition: all 1s ;
-    border: 2px solid gray;
-}
-
-
-@keyframes slider {
-    from {
-        opacity: 0.6
-    }
-    to {
-        opacity: 1
-    }
+    border: 4px solid  rgb(228, 231, 231);
 }
 
 #one:checked ~ .content > .slides .img-1 {
@@ -136,19 +127,21 @@ img {
     transform: translateX(-75%);
 }
 
-#one:checked ~ .controlls > .controll-dot > .controll {
-    background-color: rosybrown;
+#one:checked ~ .controlls > .controll-dot > #contr1 {
+    background-color: rgb(228, 231, 231);
     background-color: inherit;
 }
-#two:checked ~ .controlls > .controll-dot > .controll {
-    background-color: rosybrown;
-    background-color: inherit;
-}
-#three:checked ~ .controlls > .controll-dot > .controll {
-    background-color: rosybrown;
-    background-color: inherit;
-}
-#four:checked ~ .controlls > .controll-dot  {
-    background-color: rosybrown;
+#two:checked ~ .controlls > .controll-dot > #contr2 {
    
+    background-color: rgb(228, 231, 231);
+    background-color: inherit;
+}
+#three:checked ~ .controlls > .controll-dot > #contr3 {
+    background-color: rgb(228, 231, 231);
+    background-color: inherit;
+}
+#four:checked ~ .controlls > .controll-dot > #contr4 {
+    background-color: rgb(228, 231, 231);
+    background-color: inherit
+  
 }
